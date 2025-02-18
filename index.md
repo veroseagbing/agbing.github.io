@@ -1,4 +1,4 @@
 ---
-title: Welcome to my blog
+title: Welcome to Verose's Experience and Portfolio
 ---
 

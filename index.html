@@ -1,26 +1,139 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>
-    Verose Agbing's WIP!!
-</title>
 <meta charset="UTF-8">
-<!-- add mobile method later-->
-<style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stacked Navigation Bars</title>
+  <style>
     body {
-        font-family: Arial;
+      margin: 0;
+      display: flex;
+        background: url("assets/Cloud\ Background.png");
+        background-size: 600px;
     }
-</style>
+
+    /* Container for stacked navigation bars on the left */
+    .nav-container {
+      display: flex;
+      flex-direction: column;
+      width: 35vh;
+      height: 650px;
+      height: 97vh;
+    }
+
+    /* Individual navigation bar */
+    .nav-bar-t {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      background-color: #FFDDDE;
+      border: 5px solid #ccc;
+      margin: 10px;
+      border-radius: 7px;
+      height: 300px;
+    }
+   
+    .nav-bar-m {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      background-color: #FFDDDE;
+      border: 1px solid #ccc;
+      margin: 10px;
+      border-radius: 7px;
+      align-content: center;
+      height: 20px;
+      }
+   
+    .nav-bar-b {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      background-color: #eaeaea;
+      border: 1px solid #ccc;
+      margin: 10px;
+      border-radius: 7px;
+      height: 250px;
+      align-content: center;
+    }
+
+    /* Navigation links */
+    .nav-bar a:hover {
+      background-color: #ddd;
+    }
+   
+    .right-container {
+      width: 90vh;
+    }
+   
+    /* Top navigation bar */
+    .nav-top {
+      height: 10vh;
+      margin: 10px;
+      padding: 10px;
+      background-color: pink;
+      border: 1px solid #ccc;
+      border-radius: 7px;
+      z-index: 1000;
+    }
+   
+    /* Main content area */
+    .content {
+      padding: 10px;
+      margin: 10px;
+      background-color: pink;
+      border: 1px solid #ccc;
+      border-radius: 7px;
+      height: 80vh;
+      overflow: auto;
+    }
+  </style>
 </head>
+
 <body>
-    <h1>
-        Working on it...
-    </h1>
-    <p>
-        This is me relearning HTML/CSS and eventually! JavaScript
-    </p>
-    <p>
-        Barebones barebones and all built in VS Code and GitHub
-    </p>
+  <!-- Stacked navigation bars -->
+  <div class="nav-container">
+    <div class="nav-bar-t">
+      <h1>
+        Goals and Intentions
+      </h1>
+      <p>
+        Goals and intentions for the site with more text to see overflow
+      </p>
+    </div>
+    <div class="nav-bar-m">
+      <button href="https://en.wikipedia.org/wiki/Special:Random" class="wiki-button">
+        Again!
+      </button>
+    </div>
+    <div class="nav-bar-b">
+      <button>
+        Button on an image to play music perhaps, with forward button and loops, cassette-like
+      </button>
+    </div>
+  </div>
+ 
+  <div class="right-container">
+    <div class="nav-top">
+      <p>
+        filler
+      </p>
+    </div>
+   
+    <div class="content">
+      <p>
+        main content <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      </p>
+      <p>
+        main content <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      </p>
+      <p>
+        main content <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      </p>
+      <p>
+        main content <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      </p>
+    </div>
+  </div>
 </body>
 </html>

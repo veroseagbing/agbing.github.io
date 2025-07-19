@@ -1,0 +1,29 @@
+/* */
+body {
+    background: url("assets/Cloud\ Background.png");
+    background-size: 600px;
+}
+
+/* The sidebar menu */
+.sidenav-tl {
+  width: 160px; /* Set the width of the sidebar */
+  height: 350px;
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 2.5%; /* Stay at the top */
+  left: 2.5%;
+  background-color: #FFDDDE;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  border-radius: 12px;
+}
+.sidenav-ml {
+  width: 160px; /* Set the width of the sidebar */
+  height: 100px;
+  position: fixed; 
+  z-index: 1; /* Stay on top */
+  background-color: #FFDDDE;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  border-radius: 12px;
+  left: 2.5%;
+  margin: 2.5% auto
+}

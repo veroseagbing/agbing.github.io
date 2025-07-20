@@ -6,55 +6,60 @@
   <title>Stacked Navigation Bars</title>
   <style>
     body {
-      margin: 0;
+      background: url("assets/Cloud\ Background.png");
+      background-size: 600px;
       display: flex;
-        background: url("assets/Cloud\ Background.png");
-        background-size: 600px;
+      flex-direction: row;
+      margin: 0px;
     }
 
     /* Container for stacked navigation bars on the left */
     .nav-container {
       display: flex;
+      box-sizing: content-box;
       flex-direction: column;
-      width: 35vh;
-      height: 650px;
-      height: 97vh;
+      width: 25vw;
+      height: 100vh;
     }
 
     /* Individual navigation bar */
     .nav-bar-t {
       display: flex;
       flex-direction: column;
-      padding: 10px;
+      padding: 2vh;
       background-color: #FFDDDE;
-      border: 5px solid #ccc;
-      margin: 10px;
-      border-radius: 7px;
-      height: 300px;
+      border: 10px solid pink;
+      margin: 2vh;
+      border-radius: 15px;
+      height: 35%;
+      color: #351E29;
+      text-align: center;
     }
    
     .nav-bar-m {
       display: flex;
       flex-direction: column;
-      padding: 10px;
+      padding: 2vh;
       background-color: #FFDDDE;
-      border: 1px solid #ccc;
-      margin: 10px;
-      border-radius: 7px;
-      align-content: center;
-      height: 20px;
+      border: 10px solid pink;
+      margin: 2vh;
+      border-radius: 15px;
+      text-align: center;
+      height: 20%;
+      color:#351E29
       }
    
     .nav-bar-b {
       display: flex;
       flex-direction: column;
-      padding: 10px;
-      background-color: #eaeaea;
-      border: 1px solid #ccc;
-      margin: 10px;
-      border-radius: 7px;
-      height: 250px;
-      align-content: center;
+      padding: 2vh;
+      background-color: #FFDDDE;
+      border: 10px solid pink;
+      margin: 2vh;
+      border-radius: 15px;
+      height: 100%;
+      text-align: center;
+      color: #351E29;
     }
 
     /* Navigation links */
@@ -63,30 +68,54 @@
     }
    
     .right-container {
-      width: 90vh;
+      box-sizing: content-box;
+      width: 75vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
    
     /* Top navigation bar */
-    .nav-top {
-      height: 10vh;
-      margin: 10px;
-      padding: 10px;
-      background-color: pink;
-      border: 1px solid #ccc;
+    #nav-top {
+      box-sizing: border-box;
+      display: table;
+      height: 15vh;
+      background-color: #FFDDDE;
+      border: 10px solid pink;
       border-radius: 7px;
+      padding: 2vh;
       z-index: 1000;
+      margin: 2vh;
+    }
+
+    #nav-top .nav-top-image {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+      margin: 2vh;
     }
    
     /* Main content area */
     .content {
-      padding: 10px;
-      margin: 10px;
-      background-color: pink;
-      border: 1px solid #ccc;
+      margin: 2vh;
+      background-color: #FFDDDE;
+      border: 10px solid pink;
       border-radius: 7px;
-      height: 80vh;
       overflow: auto;
+      padding: 2.5vh;
+      height: 100%;
+      box-sizing: border-box;
     }
+
+    a.wiki-button, a.wiki-button:hover {
+      padding: 10px;
+      border-radius: 3px;
+      background-color: pink;
+      text-decoration: none;
+      text-align: center;
+      color:#351E29;
+    }
+    
   </style>
 </head>
 
@@ -102,22 +131,25 @@
       </p>
     </div>
     <div class="nav-bar-m">
-      <button href="https://en.wikipedia.org/wiki/Special:Random" class="wiki-button">
+      <a href="https://en.wikipedia.org/wiki/Special:Random" class="wiki-button">
         Again!
-      </button>
+      </a>
     </div>
     <div class="nav-bar-b">
       <button>
-        Button on an image to play music perhaps, with forward button and loops, cassette-like
+        Button on an image to play music perhaps, with forward button and loops, cassette-like. replace button tho
       </button>
     </div>
   </div>
  
   <div class="right-container">
-    <div class="nav-top">
-      <p>
-        filler
-      </p>
+    <div id="nav-top">
+      <div class="nav-top-image">
+        <a href="https://en.wikipedia.org/wiki/Special:Random"><img src="assets/Creation.png" alt="The Creation of Adam pixelated on a postage stamp and a link" height="150"></a>
+      </div>
+      <div class="nav-top-image">
+        <a href="https://en.wikipedia.org/wiki/Special:Random"><img src="assets/Consumption.png" alt="Saturn Devouring His Son pixelated on a postage stamp and a link" height="150"></a>
+      </div>
     </div>
    
     <div class="content">

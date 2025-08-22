@@ -3,169 +3,43 @@
 <head>
 <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stacked Navigation Bars</title>
+  <title>Welcome!</title>
   <style>
     body {
       background: url("assets/Cloud\ Background.png");
-      background-size: 600px;
-      display: flex;
-      flex-direction: row;
+      background-size: 550px;
       margin: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      min-width: 100vw;
     }
 
-    /* Container for stacked navigation bars on the left */
-    .nav-container {
-      display: flex;
-      box-sizing: content-box;
-      flex-direction: column;
-      width: 25vw;
-      height: 100vh;
-    }
-
-    /* Individual navigation bar */
-    .nav-bar-t {
-      display: flex;
-      flex-direction: column;
+    .welcome-box {
+      height: 35vh;
+      width: 35vw;
+      background-color: #FFDDDE;
+      border-style: solid;
+      border-width: 20px;
+      border-image-source: url("assets/Border\ Repeat\ 9-Slice.png");
+      border-image-slice: 240;
+      border-image-repeat: round;
+      margin: auto;
       padding: 2vh;
-      background-color: #FFDDDE;
-      border: 10px solid pink;
-      margin: 2vh;
-      border-radius: 15px;
-      height: 35%;
-      color: #351E29;
       text-align: center;
     }
-   
-    .nav-bar-m {
-      display: flex;
-      flex-direction: column;
-      padding: 2vh;
-      background-color: #FFDDDE;
-      border: 10px solid pink;
-      margin: 2vh;
-      border-radius: 15px;
-      text-align: center;
-      height: 20%;
-      color:#351E29
-      }
-   
-    .nav-bar-b {
-      display: flex;
-      flex-direction: column;
-      padding: 2vh;
-      background-color: #FFDDDE;
-      border: 10px solid pink;
-      margin: 2vh;
-      border-radius: 15px;
-      height: 100%;
-      text-align: center;
-      color: #351E29;
-    }
-
-    /* Navigation links */
-    .nav-bar a:hover {
-      background-color: #ddd;
-    }
-   
-    .right-container {
-      box-sizing: content-box;
-      width: 75vw;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-   
-    /* Top navigation bar */
-    #nav-top {
-      box-sizing: border-box;
-      display: table;
-      height: 15vh;
-      background-color: #FFDDDE;
-      border: 10px solid pink;
-      border-radius: 7px;
-      padding: 2vh;
-      z-index: 1000;
-      margin: 2vh;
-    }
-
-    #nav-top .nav-top-image {
-      display: table-cell;
-      text-align: center;
-      vertical-align: middle;
-      margin: 2vh;
-    }
-   
-    /* Main content area */
-    .content {
-      margin: 2vh;
-      background-color: #FFDDDE;
-      border: 10px solid pink;
-      border-radius: 7px;
-      overflow: auto;
-      padding: 2.5vh;
-      height: 100%;
-      box-sizing: border-box;
-    }
-
-    a.wiki-button, a.wiki-button:hover {
-      padding: 10px;
-      border-radius: 3px;
-      background-color: pink;
-      text-decoration: none;
-      text-align: center;
-      color:#351E29;
-    }
-    
   </style>
 </head>
 
 <body>
-  <!-- Stacked navigation bars -->
-  <div class="nav-container">
-    <div class="nav-bar-t">
-      <h1>
-        Goals and Intentions
-      </h1>
-      <p>
-        Goals and intentions for the site with more text to see overflow
-      </p>
-    </div>
-    <div class="nav-bar-m">
-      <a href="https://en.wikipedia.org/wiki/Special:Random" class="wiki-button">
-        Again!
-      </a>
-    </div>
-    <div class="nav-bar-b">
-      <button>
-        Button on an image to play music perhaps, with forward button and loops, cassette-like. replace button tho
-      </button>
-    </div>
-  </div>
- 
-  <div class="right-container">
-    <div id="nav-top">
-      <div class="nav-top-image">
-        <a href="https://en.wikipedia.org/wiki/Special:Random"><img src="assets/Creation.png" alt="The Creation of Adam pixelated on a postage stamp and a link" height="150"></a>
-      </div>
-      <div class="nav-top-image">
-        <a href="https://en.wikipedia.org/wiki/Special:Random"><img src="assets/Consumption.png" alt="Saturn Devouring His Son pixelated on a postage stamp and a link" height="150"></a>
-      </div>
-    </div>
-   
-    <div class="content">
-      <p>
-        main content <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      </p>
-      <p>
-        main content <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      </p>
-      <p>
-        main content <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      </p>
-      <p>
-        main content <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      </p>
-    </div>
+  <div class="welcome-box">
+    <p>Welcome</p> 
+    <p>to Verose's little corner of the world!</p>
+    <br>
+    <p>This site is currently under construction, but you may look at what I have crudely built so far &hearts;</p>
+    <br><br>
+    <a href="fun-home.html">The crudely built in question</a>
   </div>
 </body>
 </html>

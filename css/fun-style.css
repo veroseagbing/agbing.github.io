@@ -1,29 +1,63 @@
 /* */
-body {
-    background: url("assets/Cloud\ Background.png");
-    background-size: 600px;
+@font-face {
+  font-family: pixellari;
+  src: url(../assets/fonts/pixellari/Pixellari.ttf);
 }
 
-/* The sidebar menu */
-.sidenav-tl {
-  width: 160px; /* Set the width of the sidebar */
-  height: 350px;
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 2.5%; /* Stay at the top */
-  left: 2.5%;
-  background-color: #FFDDDE;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  border-radius: 12px;
+body {
+  background: url("../assets/images/Cloud\ Background.png");
+  background-size: 550px;
+  display: flex;
+  margin: 0px;
+  font-family: pixellari,'Courier New', Courier, monospace;
+  color: #671203;
 }
-.sidenav-ml {
-  width: 160px; /* Set the width of the sidebar */
-  height: 100px;
-  position: fixed; 
-  z-index: 1; /* Stay on top */
+
+.all-container {
+  align-content: center;
+  padding: 0;
+  border: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Top navigation bar */
+.nav-top {
+  height: 15vh;
   background-color: #FFDDDE;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  border-radius: 12px;
-  left: 2.5%;
-  margin: 2.5% auto
+  border-style: solid;
+  border-width: 20px;
+  border-image-source: url("../assets/images/Border\ Repeat\ 9-Slice.png");
+  border-image-slice: 240;
+  border-image-repeat: round;
+  z-index: 1000;
+  margin: 2vh;
+  display: block flex;
+  text-align: right;
+  width: auto;
+}
+
+.nav-top-image {
+  margin: 2%;
+  max-height: 92%;
+  box-sizing: border-box;
+  padding: 2%;
+  width: auto;
+}
+
+/* Main content area */
+.content {
+  margin: 2vh;
+  background-color: #FFDDDE;
+  border-style: solid;
+  border-width: 20px;
+  border-image-source: url("../assets/images/Border\ Repeat\ 9-Slice.png");
+  border-image-slice: 240;
+  border-image-repeat: round;
+  overflow: auto;
+  padding: 2.5vh;
+  height: 100%;
+  box-sizing: border-box;
+  flex-direction: column;
 }

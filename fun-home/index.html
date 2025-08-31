@@ -4,24 +4,8 @@
 <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Verose's Fun Home Page</title>
+  <link rel="stylesheet" href="../css/fun-style.css">
   <style>
-    body {
-      background: url("../assets/Cloud\ Background.png");
-      background-size: 550px;
-      display: flex;
-      flex-direction: row;
-      margin: 0px;
-    }
-
-    .all-container {
-      align-content: center;
-      padding: 0;
-      border: 0;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: row;
-    }
-
     /* Container for stacked navigation bars on the left */
     .nav-container {
       display: flex;
@@ -39,12 +23,11 @@
       background-color: #FFDDDE;
       border-style: solid;
       border-width: 20px;
-      border-image-source: url("../assets/Border\ Repeat\ 9-Slice.png");
+      border-image-source: url("../assets/images/Border\ Repeat\ 9-Slice.png");
       border-image-slice: 240;
       border-image-repeat: round;
       margin: 2vh;
       height: 35%;
-      color: #351E29;
       text-align: center;
     }
    
@@ -55,13 +38,12 @@
       background-color: #FFDDDE;
       border-style: solid;
       border-width: 20px;
-      border-image-source: url("../assets/Border\ Repeat\ 9-Slice.png");
+      border-image-source: url("../assets/images/Border\ Repeat\ 9-Slice.png");
       border-image-slice: 240;
       border-image-repeat: round;
       margin: 2vh;
       text-align: center;
       height: 20%;
-      color:#351E29
       }
    
     .nav-bar-b {
@@ -71,13 +53,12 @@
       background-color: #FFDDDE;
       border-style: solid;
       border-width: 20px;
-      border-image-source: url("../assets/Border\ Repeat\ 9-Slice.png");
+      border-image-source: url("../assets/images/Border\ Repeat\ 9-Slice.png");
       border-image-slice: 240;
       border-image-repeat: round;
       margin: 2vh;
       height: 100%;
       text-align: center;
-      color: #351E29;
     }
 
     /* Navigation links */
@@ -92,49 +73,7 @@
       display: flex;
       flex-direction: column;
     }
-   
-    /* Top navigation bar */
-    .nav-top {
-      height: 15vh;
-      background-color: #FFDDDE;
-      border-style: solid;
-      border-width: 20px;
-      border-image-source: url("../assets/Border\ Repeat\ 9-Slice.png");
-      border-image-slice: 240;
-      border-image-repeat: round;
-      z-index: 1000;
-      margin: 2vh;
-      display: block flex;
-      text-align: right;
-    }
-
-    .nav-top-image {
-      margin: 2%;
-      max-height: 92%;
-      box-sizing: border-box;
-      padding: 2%;
-      width: auto;
-    }
-
-    .nav-top p {
-      margin: 2%;
-      width: 20vw;
-    }
-   
-    /* Main content area */
-    .content {
-      margin: 2vh;
-      background-color: #FFDDDE;
-      border-style: solid;
-      border-width: 20px;
-      border-image-source: url("../assets/Border\ Repeat\ 9-Slice.png");
-      border-image-slice: 240;
-      border-image-repeat: round;
-      overflow: auto;
-      padding: 2.5vh;
-      height: 100%;
-      box-sizing: border-box;
-    }
+  
 
     a.wiki-button, a.wiki-button:hover {
       padding: 10px;
@@ -142,9 +81,14 @@
       background-color: pink;
       text-decoration: none;
       text-align: center;
-      color:#351E29;
+      color: #671203;
+
     }
     
+    h1 {
+      text-align: center;
+    }
+
   </style>
 </head>
 
@@ -162,7 +106,7 @@
       </p>
     </div>
     <div class="nav-bar-m">
-      <a href="https://en.wikipedia.org/wiki/Special:Random" class="wiki-button">
+      <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" class="wiki-button">
         Again!
       </a>
     </div>
@@ -175,24 +119,37 @@
  
   <div class="right-container">
     <div class="nav-top">
-      <a href="https://en.wikipedia.org/wiki/Special:Random"><img class="nav-top-image" src="../assets/Creation.png" alt="The Creation of Adam pixelated on a postage stamp and a link"/></a>
-      <a href="https://en.wikipedia.org/wiki/Special:Random"><img class="nav-top-image" src="../assets/Consumption.png" alt="Saturn Devouring His Son pixelated on a postage stamp and a link"/></a>
-      <a href="https://en.wikipedia.org/wiki/Special:Random"><img class="nav-top-image" src="../assets/Community.png" alt="Dance pixelated on a postage stamp and a link"/></a>
-      <p>Veridian<br>Hues</p>
+      <a href="Creation/index.html"><img class="nav-top-image" src="../assets/images/Creation.png" alt="The Creation of Adam pixelated on a postage stamp and a link"/></a>
+      <a href="https://en.wikipedia.org/wiki/Special:Random"><img class="nav-top-image" src="../assets/images/Consumption.png" alt="Saturn Devouring His Son pixelated on a postage stamp and a link"/></a>
+      <a href="https://en.wikipedia.org/wiki/Special:Random"><img class="nav-top-image" src="../assets/images/Community.png" alt="Grazing Horses pixelated on a postage stamp and a link"/></a>
+      <a href="../fun-home/index.html"><img class="nav-top-image" src="../assets/images/Veridian Hues.png" alt="Veridian Hues logo"/></a>
     </div>
    
     <div class="content">
+      <h1>
+        Welcome to Verose's Home Page!
+      </h1>
       <p>
-        main content <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        Hi! Welcome to my "fun" home page. Here on this page I have things about myself that I feel are not easily reflected in a portfolio: my interests in hobbies, art, media, and more. This will (eventaully) be a really extensive site with (hopefully) really fancy JavaScript. Lots of hopes and dreams for this website, but for now this bare-bones layout will slowly fill with information before all the bells and whistles. <br><br><br>
       </p>
+      <h2>
+        About Me
+      </h2>
       <p>
-        main content <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        My name is Verose (pronounced like "verbose" without the "b"). I graduated from MIT with a major in Humanities and Engineering, concentrating on Biological Engineering and Theater Arts. I am the first in my school with this particular combination, and it's an odd combination, but I quite like both subjects. Although I am very proud of this achievement, I Definitely Feel that people get real weird about the school name so I tend to omit that when I introduce myself in less network-y settings (it honestly works as great leverage in those areas). <br><br>
+        
+        Now when I introduce myself to someone, I am often at a loss as to what to say about myself. I don't want to talk about work (it's a weird thing to do I think), and I guess introductions depend on the setting, but I am still grasping for words in those moments. <br><br>
+        
+        Anyways, I do hope having this website will also help me sort out what my interests are, especially with what I'm proud of, that will help shape the way I say, "Hi, my name is Verose and I...". <br><br><br>
       </p>
+
+      <h2>
+        About My Website
+      </h2>
       <p>
-        main content <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      </p>
-      <p>
-        main content <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        Like I said, this website will kind of work as a fun and "portable" way to store information about my interests. There are some fun navigation things on the left, and some pictures that link to other parts of this site. What they lead to... I made the images as a hint and hopefully in a cheeky way. Maybe it's too on the nose... <br><br>
+
+        I do really hope this website is fun to look at and get a little glimpse of who I am in this little corner of the world. Also if you know me in real life, I will have to get over the embarrassment of looking you in the eyes with the knowledge that you have seen my fumbling attempts at artistry (but where's the fun of art if you aren't an <a href="https://www.etymonline.com/word/amateur" target="_blank">amateur</a>?).
       </p>
     </div>
   </div>

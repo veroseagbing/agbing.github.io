@@ -8,32 +8,132 @@
   <style>
     .all-container {
     flex-direction: column;
-    width: 55vw;
-    height: 100vh;
+    width: 60vw;
+    height: auto;
     }  
+
+    #creative-grid {
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "draw_paint photo"
+        "zine crow"
+        "res_write recipes"
+        "sew nails";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 3fr 3fr 3fr 3fr;
+    }
+
+    .header {
+        grid-area: header;
+    }
+    
+    .draw_paint {
+        grid-area: draw_paint;
+    }
+
+    .photo {
+        grid-area: photo;
+    }
+    
+    .zine {
+        grid-area: zine;
+    }
+
+    .crow {
+        grid-area: crow;
+    }
+
+    .res_write {
+        grid-area: res_write;
+    }
+
+    .recipes {
+        grid-area: recipes;
+    }
+
+    .sew {
+        grid-area: sew;
+    }
+
+    .nails {
+        grid-area: nails;
+    }
+
+    .header, .draw_paint, .photo, .zine, .crow, .res_write, .recipes, .sew, .nails {
+        background-color: #FFDDDE;
+        border-style: solid;
+        border-width: 20px;
+        border-image-source: url("../../assets/images/Border\ Repeat\ 9-Slice.png");
+        border-image-slice: 240;
+        border-image-repeat: round;  
+        margin: 2vh; 
+        padding: 2.5vh;
+        overflow: auto;
+    }
+
+    h1.title {
+        text-align: center;
+        margin: 0.5vh 0vh 1.5vh 0vh;
+    }
+
+    a.blog, a.blog:hover {
+        text-decoration: none;
+        color: #671203;
+    }
+
     </style>
 </head>
 <body>
     <div class="all-container">
         <div class="nav-top">
             <a href="Creation/index.html"><img class="nav-top-image" src="../../assets/images/Creation.png" alt="The Creation of Adam pixelated on a postage stamp and a link"/></a>
-            <a href="https://en.wikipedia.org/wiki/Special:Random"><img class="nav-top-image" src="../../assets/images/Consumption.png" alt="Saturn Devouring His Son pixelated on a postage stamp and a link"/></a>
-            <a href="https://en.wikipedia.org/wiki/Special:Random"><img class="nav-top-image" src="../../assets/images/Community.png" alt="Grazing Horses pixelated on a postage stamp and a link"/></a>
+            <a href="../Consumption/index.html"><img class="nav-top-image" src="../../assets/images/Consumption.png" alt="Saturn Devouring His Son pixelated on a postage stamp and a link"/></a>
+            <a href="../Community/index.html"><img class="nav-top-image" src="../../assets/images/Community.png" alt="Grazing Horses pixelated on a postage stamp and a link"/></a>
             <a href="../../fun-home/index.html"><img class="nav-top-image" src="../../assets/images/Veridian Hues.png" alt="Veridian Hues logo"/></a>
         </div>
-    <div class="content">
-        <p>
-            main content <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        </p>
-        <p>
-            main content <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        </p>
-        <p>
-            main content <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        </p>
-        <p>
-            main content <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        </p>
+        <div id="creative-grid">
+            <div class="header">
+                <h1 class="title">Creation</h1>
+                <p>What I create in a variety of ways that includes this website.
+                    <br>
+                    <br>
+                    Other random things I like creating:
+                </p>
+            </div>
+            <div class="draw_paint">
+                <h1 class="title">Drawings and Paintings</h1>
+                <p>Drawings and paintings I've done with a variety of mediums: watercolor, acrylic, oil, graphite... there's a lot of materials I use.</p>
+            </div>
+            <div class="photo">
+                <h1 class="title">Photos</h1>
+                <p>Sometimes I like to take a nice photo.</p>
+            </div>
+            <div class="zine">
+                <h1 class="title">Zines</h1>
+                <p>Zines can be really made about and with anything. I haven't gotten so far as to make something Not out of paper, but I do like pushing myself to create something that doesn't stand as one singular image. They are definitely a craft that I have lots to learn from and about.</p>
+                <h2><a href="zine/ArtBook_EntertainmentAndRestoration" class="blog">Art Book: Entertainment and Restoration</a></h2>
+            </div>
+            <div class="crow">
+                <h1 class="title">Crow Journal</h1>
+                <p>These are my "crow journal" entries. I enjoy collecting pretty scraps of paper to create collages in my cheap Amazon-brand journal with a very loose theme per spread. These are some of the ones I am proud of.</p>
+            </div>
+            <div class="res_write">
+                <h1 class="title">Research and Writing</h1>
+                <p>Looking into doing deep dives and research, it's become a new thing online that I would love to take up to work towards expanding and being more consistent with my learning. But also other types of writing like poetry and personal essays that I would like to do.</p>
+            </div>
+            <div class="recipes">
+                <h1 class="title">Recipes</h1>
+                <p>My favorite recipes, sometimes adjusted from other recipes.</p>
+            </div>
+            <div class="sew">
+                <h1 class="title">Sewing Projects</h1>
+                <p>All made by hand with my Singer Simple machine.</p>
+            </div>
+            <div class="nails">
+                <h1 class="title">Nails</h1>
+                <p>All hand painted by me with gel polish, and I do the extensions myself with polygel.</p>
+            </div>
         </div>
     </div>
 </body>

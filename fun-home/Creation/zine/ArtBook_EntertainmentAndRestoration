@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Art Book: Entertainment and Restoration</title>
+<link rel="stylesheet" href="../../../css/fun-style.css">
+<style>
+    .all-container {
+        flex-direction: column;
+        width: 60vw;
+        height: 100vh;
+    } 
+    
+    h1 {
+        margin-top: 1vh;
+        text-align: center;
+    }
+
+    .book {
+        display: block flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: auto;
+        max-width: 50%;
+    }
+
+    .button-container {
+        align-self: center;
+        display: block flex;
+        flex-direction: row;
+        justify-content: center;
+        margin:auto;
+        padding-top: 2vh;
+    }
+
+    button {
+        margin: 1vh;
+    }
+
+    img {
+        height: 50vh;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="all-container">
+    <div class="nav-top">
+        <a href="../../Creation/"><img class="nav-top-image" src="../../../assets/images/Creation.png" alt="The Creation of Adam pixelated on a postage stamp and a link"/></a>
+        <a href="../../../Consumption/index.html"><img class="nav-top-image" src="../../../assets/images/Consumption.png" alt="Saturn Devouring His Son pixelated on a postage stamp and a link"/></a>
+        <a href="../../../Community/index.html"><img class="nav-top-image" src="../../../assets/images/Community.png" alt="Grazing Horses pixelated on a postage stamp and a link"/></a>
+        <a href="../../../fun-home/index.html"><img class="nav-top-image" src="../../../assets/images/Veridian Hues.png" alt="Veridian Hues logo"/></a>
+    </div>
+
+    <div class="content">
+        <h1>Art Book: Entertainment and Restoration</h1>
+        <div class="book">
+            <img src="../../../assets/images/ArtBook/cover.jpg">
+        </div>
+        <div class="button-container">
+            <button>Previous</button>
+            <button>Next</button>
+        </div class="button-container">
+
+        <p>Working on making this a clickable feature where you can click to a different page</p>
+    </div>
+</body>
+</html>
+

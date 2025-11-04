@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Consumption</title>
+<link rel="stylesheet" href="../../css/fun-style.css">
+<style>
+    .all-container {
+    flex-direction: column;
+    width: 60vw;
+    height: 100vh;
+    }  
+
+    #creative-grid {
+        display: grid;
+        grid-template-areas:
+        "header header" 
+        "read tv" 
+        "game  literature";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr 2fr;
+    }
+
+    .header {
+        grid-area: header;
+    }
+
+    .read {
+        grid-area: read;
+    }
+
+    .tv {
+        grid-area: tv;
+    }
+
+    .game {
+        grid-area: game;
+    }
+
+    .literature {
+        grid-area: literature;
+    }
+
+    .header, .read, .literature, .tv, .game {
+        background-color: #FFDDDE;
+        border-style: solid;
+        border-width: 20px;
+        border-image-source: url("../../assets/images/Border\ Repeat\ 9-Slice.png");
+        border-image-slice: 240;
+        border-image-repeat: round;  
+        margin: 2vh;  
+        padding: 2.5vh;
+        overflow: auto;
+    }
+
+    h1.title {
+        text-align: center;
+        margin: 0.5vh 0vh 1.5vh 0vh;
+    }
+
+    h2 {
+        margin: 0;
+    }
+    
+    p.star {
+        margin: 0;
+    }
+
+    a.blog, a.blog:hover {
+        text-decoration: none;
+        color: #671203;
+    }
+
+</style>
+</head>
+
+<body>
+    <div class="all-container">
+        <div class="nav-top">
+            <a href="../Creation/index.html"><img class="nav-top-image" src="../../assets/images/Creation.png" alt="The Creation of Adam pixelated on a postage stamp and a link"/></a>
+            <a href="../Consumption/index.html"><img class="nav-top-image" src="../../assets/images/Consumption.png" alt="Saturn Devouring His Son pixelated on a postage stamp and a link"/></a>
+            <a href="../Community/index.html"><img class="nav-top-image" src="../../assets/images/Community.png" alt="Grazing Horses pixelated on a postage stamp and a link"></a>
+            <a href="../../fun-home/index.html"><img class="nav-top-image" src="../../assets/images/Veridian Hues.png" alt="Veridian Hues logo"/></a>
+        </div>
+        <div id="creative-grid">
+            <div class="header">
+                <h1 class="title">Consumption</h1>
+                <p>Media I consume, and my ratings and thoughts for them.</p>
+            </div>
+            <div class="read">
+                <h1 class="title">Books</h1>
+                <h2>Educated</h2>
+                <p class="star">&#11088; &#11088; &#11088; &#11088; &#11088;</p>
+            </div>
+            <div class="literature">
+                <h1 class="title">Literature</h1>
+                <h2>Temporary Title</h2>
+                <p class="star">&#11088; &#11088; &#11088; &#11088; &#11088;</p>
+            </div>
+            <div class="tv">
+                <h1 class="title">TV Shows, Movies, and Videos</h1>
+                <h2><a href="tv/The Sandman" class="blog">The Sandman</a></h2>
+                <p class="star">&#11088; &#11088; &#11088; &#11088; &#11088;</p>
+            </div>
+            <div class="game">
+                <h1 class="title">Games</h1>
+                <h2>Temporary Title</h2>
+                <p class="star">&#11088; &#11088; &#11088; &#11088; &#11088;</p>
+            </div>
+        </div>
+    </div>
+</body>

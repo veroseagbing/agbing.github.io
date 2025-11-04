@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Sandman</title>
+<link rel="stylesheet" href="../../../css/fun-style.css">
+<style>
+    .all-container {
+        flex-direction: column;
+        width: 60vw;
+        height: 100vh;
+    }  
+
+    h1, h2 {
+        text-align: center;
+    }
+
+    h1 {
+        margin-bottom: 0vh;
+    }
+
+    h2 {
+        margin-top: 0vh;
+    }
+
+    img {
+        width: auto;
+        height: 30vh;
+        float: left;
+        margin: 0vh 1.5vh;
+    }
+</style>
+</head>
+
+<body>
+    <div class="all-container">
+        <div class="nav-top">
+            <a href="../../Creation/index.html"><img class="nav-top-image" src="../../../assets/images/Creation.png" alt="The Creation of Adam pixelated on a postage stamp and a link"/></a>
+            <a href="../../Consumption/index.html"><img class="nav-top-image" src="../../../assets/images/Consumption.png" alt="Saturn Devouring His Son pixelated on a postage stamp and a link"/></a>
+            <a href="../../Community/index.html"><img class="nav-top-image" src="../../../assets/images/Community.png" alt="Grazing Horses pixelated on a postage stamp and a link"/></a>
+            <a href="../../../fun-home/index.html"><img class="nav-top-image" src="../../../assets/images/Veridian Hues.png" alt="Veridian Hues logo"/></a>
+        </div>
+
+        <div class="content">
+            <h1>The Sandman</h1>
+            <h2>&#11088; &#11088; &#11088; &#11088; &#11088;</h2>
+            <img src="../../../assets/images/The Sandman.jpg" alt="The Sandman Netflix show poster"/>
+            <p>
+                My first review! So I don't know how to write one at all. But here is my best effort.
+                <br>
+                <br>
+                The Sandman was a beautiful story about love and change. Which seems really basic, but their elements of storytelling was just absolutely spectacular. It brought tears, I was shocked, and I sat at the edge of my seat the whole time. I definitely think that there was much more of a character arc for the second season, which makes sense since they went through more of the novels (I think). I would have been fine with the slower pacing of the first season for sure, but because of Neil Gaiman and his sins I'm also glad they stopped the show. 
+                <br>
+                <br>
+                Little thing I loved was the portrayal of Lucifer. I was obsessed! The delicate features of this actor was such a contrast to the world and costuming of Lucifer. My little theater heart was yelling!!!
+                <br>
+                <br>
+                The characters were well-developed in the second season. I understand the lack of characters, especially the other Endless, in the first season. Even with the second season's blast through the storyline, I felt like I connected with the characters, understood their compelling motivations, and appreciated their complexity. It's smart, the way the Endless are portrayed sometimes, clever in a way that I appreciate the nuance in their character.
+                <br>
+                <br>
+                Completed Season 1 and 2: 05 Sept 2025
+            </p>
+        </div>
+    </div>
+</body>

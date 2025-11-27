@@ -39,7 +39,7 @@
     }
 
     img {
-        height: 50vh;
+        height: 45vh;
     }
 </style>
 </head>
@@ -60,8 +60,8 @@
             <img src="../../../assets/images/ArtBook/cover.jpg">
         </div>
         <div class="button-container">
-            <button>Previous</button>
-            <button>Next</button>
+            <button>&#8592;</button>
+            <button>&#8594;</button>
         </div class="button-container">
 
         <p>Working on making this a clickable feature where you can click to a different page</p>
